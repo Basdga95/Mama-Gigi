@@ -1,0 +1,172 @@
+<script src="/eruda.min.js"></script>
+<script>
+    eruda.init({
+        tool: ['console', 'elements', 'network', 'resources', 'info']
+    });
+    eruda.get().config.set('displaySize', 60);
+    eruda.remove('settings');
+    eruda.util.evalCss.setTheme('Light');
+</script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Yamaha Sumatera Barat | MAMA GIGI</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"/>
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet"/>
+<link href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" rel="stylesheet"/>
+
+<style>
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Tombol WhatsApp */
+.btn-wa {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #25D366;
+  color: white;
+  border-radius: 50px;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+  z-index: 9999;
+}
+.btn-wa img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+.btn-wa span {
+  font-weight: bold;
+  color: white;
+}
+
+/* Banner */
+.main-banner img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Promo bawah */
+#promo-bawah-baru, #promo-anton {
+  background-color: #fff;
+  padding: 40px 20px;
+}
+#promo-bawah-baru div, #promo-anton div {
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#promo-bawah-baru div:hover, #promo-anton div:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+</style>
+</head>
+
+<body>
+<header>
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <img src="https://blogger.googleusercontent.com/img/a/AVvXsEj99gJp4R7Fa-Qh3aptSkfdUklb4Z8GKsjamiUgD3YjzyoUSKQvz3BFSJ6zNKJLcVCW5qKtYUNeIT9pbjuA5v1lqJHS05ZZCAE664YzyQxexp00Vz939qO52HFDWScC_0Scjh_YtTe-xRrjLciQ2gZz8mVLfs18WeoZQfvirVGArh2HNe_8oh0z_6uTqyg9" alt="MAMA GIGI" style="height:50px;">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="/profile">About Us</a></li>
+        <li class="nav-item"><a class="nav-link" href="/contact">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="/promo">Promo</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+
+<!-- BANNER DIPINDAH KE ATAS -->
+<section class="main-banner">
+  <div class="swiper banner-wrapper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEgWZJx3DUb8opkhCzQC7FaSm7XLQdgH31gRespRvFFdhezrQMr6ssZBc8pXCGbT9MQA01FfLARl6kUg93ucy2s8tUOKfoFULmg8dqOEal7Yr2TGgZaeYXYL310_kE8gcaF0iATCFKAz4Eb0gVxodH9Z_xwAXt2PwXGrEl18CLM-qmH6VPRfdF36IdFwq1rH"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEi8JJima6JBPYpLNJoPCYwuVehHHv1soAdNf2FIpgD367zxZ4Prk5CgR0jAllQqrGNWrspx_41rV5dA4BQTmQIaj_RilvI-y_4oD0rscUOQXWiGaWQ7QV9tosiGCSuWALy94-WiPzZbg8zemzpjB_RNUqND4YzMzDTNB5c-UkKTZDImrxCYThQ8UHq3H4r_"/>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://blogger.googleusercontent.com/img/a/AVvXsEhcHV3A3H39rXsH2HHaP80w8W91vb8aUaODuIB2_ax_T7IZrIcfNEplee3nxJH8S5q4yZ55LOgzMfE9MT81tgz8kxPdmNQVJ3xPrsEnrDF_u0mVZLUkCphODB7_AEHZl9rV5FdGRoVJ6ojgc0wbcyEtF9dqk-1KeFVtnHqY_n3uQJcVTBPweIGkuwDOjcGR"/>
+      </div>
+    </div>
+  </div>
+  <div class="banner-pagination text-center"></div>
+</section>
+<!-- PROMO -->
+<section id="promo-bawah-baru">
+  <div style="display:flex;flex-wrap:wrap;gap:25px;justify-content:center;">
+    <div style="width:280px;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEiQGae7FVfoVuiU0_ot3_I-qErlJkIi7PgReu9yyJFceR386wL94PEqLtLuAR511ikAwC56rhbDFWgBRJeZYdM5zhkar07yexajfNuw2-MCTuc8KULaZ-4w1btHGO6eF6_Uo9MSQfvdFYx38brAVATRjH0mGEb5VSFdVgn0-nIkj_3veMAnQhT87nR7OwbE" style="width:100%;border-radius:12px;"/><p style="color:red;font-weight:bold;text-align:left;margin-top:10px;font-size:20px;">Motor Scoopy Promo Harga Rp600.000</p></div>
+    <div style="width:280px;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEiwbn_RUm2ESRpF0WASPS6rJN5WBr8o4W673DPJugzzfFy1C0KcORvCnIE90dmdap5Ub8vOe7FWyRSQY1TF2GnAVUJJDqOGyzk2anI6p7p5lJ-BqlTibawcoM6F0vJsVxDhJ3m44UHS9vO7tC8d2JYUUT39St1KBsuKrwvxxZFu-LXkM7sx9rBQTZ1lj-qd" style="width:100%;border-radius:12px;"/><p style="color:red;font-weight:bold;text-align:left;margin-top:10px;font-size:20px;">Motor Pcx160Promo Harga Rp600.000</p></div>
+  </div>
+</section>
+<section id="promo-anton">
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:25px;">
+    <div style="width:280px;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEiqCC9D-r4cFQ6d9U-4Ramr1r53tb4JvSJ1b4Pyt2VV3AGk72o7e7GDt7FHdXgJjF9gSlJ2SVSyW5Mx4AGgcDqhiyk15QEUPakCZyGCdI6doNDhrfXcFCFuHpDZPXXus3LdHgeJlC5nMXxKWLwbkVdcSxJWiwDSHN4fAtnJv1H9oRIvWoMWUvY4auaq1yDx" style="width:100%;border-radius:12px;"/><p style="color:red;font-weight:bold;text-align:left;margin-top:10px;font-size:20px;">Motor Honda PCX 160Promo Harga Rp600.000</p></div>
+  </div>
+  </section>
+<section id="promo-anton">
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:25px;">
+    <div style="width:280px;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEg0ipCYmDNJJ6fRhWT2IAKe0YuERIc6akztrnCD9JyFLPsK3jgDg0hqhCeghTfDLDhXaqategjha2gG_ZUJBvUBDT8-m2xKdUUXpYtRYlRcNrXzZ1pUG3n65-OMcjOdUgma_krqJycSNRVsNXXkm1CCZ8mpA4HTa7gUvnpTuwHQe-R_ezC7_wkwJAs8Hjmg" style="width:100%;border-radius:12px;"/><p style="color:red;font-weight:bold;text-align:left;margin-top:10px;font-size:20px;">Yamaha Aerox 155.Promo Harga Rp600.000</p></div>
+  </div>
+  </section>
+<section id="promo-anton">
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:25px;">
+    <div style="width:280px;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEgkiro3UPso3FJNdVg9k5T6Oe85QAPQ0YLhg4j_pJTTiWsMKIxurKlJlaAiDFcIWSg3IAJtFV-boMB4Kwg-qvEdy29wCEZjIf_Mqd7Nl8cX2ORjZvaXIcaNfPgaLu73TDh0itZMaq6CgFg1TUEpmCh6G1LO-B5oNCMo6RcytXFlYl5hXeihFGyNhPUWCbwP" style="width:100%;border-radius:12px;"/><p style="color:red;font-weight:bold;text-align:left;margin-top:10px;font-size:20px;">Honda PCX 160.Promo Harga Rp600.000</p></div>
+  </div>
+  </section>
+<section id="promo-anton">
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:25px;">
+    <div style="width:280px;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEg0ipCYmDNJJ6fRhWT2IAKe0YuERIc6akztrnCD9JyFLPsK3jgDg0hqhCeghTfDLDhXaqategjha2gG_ZUJBvUBDT8-m2xKdUUXpYtRYlRcNrXzZ1pUG3n65-OMcjOdUgma_krqJycSNRVsNXXkm1CCZ8mpA4HTa7gUvnpTuwHQe-R_ezC7_wkwJAs8Hjmg" style="width:100%;border-radius:12px;"/><p style="color:red;font-weight:bold;text-align:left;margin-top:10px;font-size:20px;">Yamaha Aerox 155.Promo Harga Rp600.000</p></div>
+  </div>
+  </section>
+<section id="promo-anton">
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:25px;">
+    <div style="width:280px;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhroeMjdJKo7rjpHOWM9ey4gWvyp4wJtwwuHcwVEQzKoDk1N4yGvxMhEcdgyDdzZl5t35NvrsSOc8RenMkcZUjh-3FLqQoal7mZL8rP6yO0H2Gli3Rt_UqhlIfJ4bfK79fnl0KNd6rzVlgezmMeH-Pk43yJfCtCPnOPVl3wVoL1cYTOO5DQ-Fdt2iUCu2VM" style="width:100%;border-radius:12px;"/><p style="color:red;font-weight:bold;text-align:left;margin-top:10px;font-size:20px;">Honda Beat.Promo Harga Rp600.000</p></div>
+  </div>
+</section>
+<section id="promo-anton">
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:25px;">
+    <div style="width:280px;"><img src="https://blogger.googleusercontent.com/img/a/AVvXsEhLhauVC_dbj4NAfftzJtRqxxsscQ2JULBC_THahP0ebu-HK0_yuAen89L_xqDl0g_zDWXB_SSFF9lF_Tug5hcdw-qFmUPryWPRTIUHXeKlwPaUiYt-uefZykv_0AAa7DVhFRwpobsP99rn2Vo_NR8ObRAiDgSj6RHu6u3kBIAjvkGXrfsfeVbO6E3Qu6HP" style="width:100%;border-radius:12px;"/><p style="color:red;font-weight:bold;text-align:left;margin-top:10px;font-size:20px;">Motor Vario160/Promo Harga Rp600.000</p></div>
+  </div>
+<section id="promo-anton">
+  <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:25px;">
+    <div style="width:280px;"><img src="https://www.yamaha-motor.co.id/uploads/products/new_product_model_image/2023041415280563814D66821.png" style="width:100%;border-radius:12px;"/><p style="color:red;font-weight:bold;text-align:left;margin-top:10px;font-size:20px;">Promo Harga Rp600.000</p></div>
+  </div>
+
+<!-- Tombol WhatsApp -->
+<a class="btn-wa" href="https://api.whatsapp.com/send?phone=6282186779881&amp;text=Halo admin, saya ingin menanyakan" target="_blank" rel="noopener noreferrer">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WA"/>
+  <span>MAMA GIGI</span>
+</a>
+
+<footer class="text-center py-3 mt-4 border-top">
+  © 2025 MAMA GIGI. All Rights Reserved
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  autoplay: { delay: 2500, disableOnInteraction: false },
+  pagination: { el: '.banner-pagination', clickable: true },
+});
+</script>
+</body>
+</html>
